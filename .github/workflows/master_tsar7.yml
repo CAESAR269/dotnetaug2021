@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'tsar7'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2C8A42C77D914585BE1E24624D050E06 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_93E8C6E29CA041A690903FF36CFFB4C7 }}
           package: .
