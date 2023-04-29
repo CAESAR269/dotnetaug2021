@@ -14,10 +14,12 @@ variables:
 
 steps:
 - task: DotNetCoreCLI@2
+  displayName: Build
   inputs:
-    command: 'build'
+    command: build
+    projects: '**/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
-
+    
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
