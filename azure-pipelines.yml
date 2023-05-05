@@ -37,3 +37,11 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: drop.
     publishLocation: 'Container'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(977812bc-0cfb-4c57-8912-a7804ccf8fba)'
+    appType: 'webAppLinux'
+    WebAppName: 'tsar6'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
