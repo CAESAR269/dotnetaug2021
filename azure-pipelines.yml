@@ -43,5 +43,5 @@ steps:
     SourcePath: '$(System.DefaultWorkingDirectory)/**/*.zip'
     azureSubscription: 'Azure subscription 1(977812bc-0cfb-4c57-8912-a7804ccf8fba)'
     Destination: 'AzureBlob'
-    storage: 'csg10032001d9992d3f'
-    ContainerName: 'cat'
+    storage: 'tsar7'
+    ContainerName: 'tsar7'
